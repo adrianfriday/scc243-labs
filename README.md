@@ -13,8 +13,8 @@ All the writing will be conducted in markdown (`.md` files) and submitted via a 
 
 The labs are anticipated to be as follows:
 
-| Week | Lab | See details
-|-------------------------------------------------------------------------------------- | Link |
+| Week | Lab | See details (link) |
+| ---  | --- | --- |
 | 1 | Setup research task, github; opening reflective statement | [week1](week1) |
 | 2 | My digital footprint survey/ photos | [week2](week2) |
 | 3 | Workload footprint estimation | [week3](week3) |
