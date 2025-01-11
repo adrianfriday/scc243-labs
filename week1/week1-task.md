@@ -40,11 +40,15 @@ You should create a lab notebook file for today to keep track of:
 Here are some useful digital starting points.  Don't be afraid to look for your own.  I'm definitely interested in what you find and how you find it, and also what you're thinking about it!
 
 ### Digital infrastructure maps
+* [Data centre map](https://www.datacentermap.com)
 * [Colocation datacentre map](https://www.colo-x.com/data-centre-database-map/)
+* [Cloud infastructure map](https://www.cloudinfrastructuremap.com)
 * [ArcGis US datacentres](https://analysis-1.maps.arcgis.com/apps/dashboards/abc6fbecb1904325bd734392f47a7850)
 * [5G wireless map](https://www.nperf.com/en/map/5g)
 * [3G, 4G, 5G map](https://www.nperf.com/en/map/GB/-/-/signal?ll=20&lg=0&zoom=3)
 * [Broadband UK map](https://bidb.uk)
+* [Internet exchange map](https://www.internetexchangemap.com)
+* [TeleGeography transatlantic fibre map](https://www.submarinecablemap.com)
 
 ### For comparison with other infrastructures
 * [Mains power map](https://openinframap.org/#11.15/54.003/-2.7458)
