@@ -54,3 +54,4 @@ Here are some useful digital starting points.  Don't be afraid to look for your 
 * [Mains power map](https://openinframap.org/#11.15/54.003/-2.7458)
 * [Railways in UK map](https://www.openrailwaymap.org)
 * [Open streetmap](https://www.openstreetmap.org)
+* [USGS satellite maps](https://earthexplorer.usgs.gov)
