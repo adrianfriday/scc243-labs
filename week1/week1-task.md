@@ -20,7 +20,8 @@ You should create a lab notebook file for today to keep track of:
 1. Call your lab notes something like '`username-week1-labnotes.md`', where `username` is your login id (mine would be ``friday``).  Create it inside your week1 repository folder, i.e. the same folder as this file.
 2. Add a title, sentence about what asset or assets and region you've chosen to focus on.  Add a subsection for each asset type, e.g. '## Data centres in Manchester'.  See [how to use markdown for hints](https://www.markdownguide.org).
 3. For each asset, add it's title, a link (URL) to information about it (capacity, energy demand, owner) **and** the search engine/map you used.  *I'd recommend a markdown table for each asset.*  If you want to screenshot or include graphical snapshots of interesting features you find, then please feel free.  Save any images you link to from your markdown file into the same week1 folder.  I'd recommend `jpg` or `png` file formats for images (i.e. common formats supported by github's markdown renderer).
-4. Remember to 'git add' *any files you create*, including any image files (or they won't be committed).  You can check what's tracked in your report by using `'git status'` in the terminal.  Commit and push your repo at the end of the task (as a minimum).  *You can commit more often than this should you wish or continue after the allocated lab time.*
+4. Add a subsection at the end called 'Reflections'.  Write a paragraph under this with your overall thoughts on what you've found and observed, and ideally whether it has surprised you or confirmed what you already knew.  How sustainable do you think it is?
+5. Remember to 'git add' *any files you create*, including any image files (or they won't be committed).  You can check what's tracked in your report by using `'git status'` in the terminal.  Commit and push your repo at the end of the task (as a minimum).  *You can commit more often than this should you wish or continue after the allocated lab time.*
 
 ## Things to explore
 1. How much provision is there in the region?
@@ -36,6 +37,8 @@ You should create a lab notebook file for today to keep track of:
 * You should appreciate the relationship between different digital services, population areas in relation to other non-digital infrastructures
 
 ## Starting points
+Here are some useful digital starting points.  Don't be afraid to look for your own.  I'm definitely interested in what you find and how you find it, and also what you're thinking about it!
+
 ### Digital infrastructure maps
 * [Colocation datacentre map](https://www.colo-x.com/data-centre-database-map/)
 * [ArcGis US datacentres](https://analysis-1.maps.arcgis.com/apps/dashboards/abc6fbecb1904325bd734392f47a7850)
