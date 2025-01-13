@@ -2,7 +2,7 @@
 
 ## Submission checklist
 
-- [ ] Ensure that you've created **a private** github repository (I recommend cloning my template: [https://scc-source.lancs.ac.uk/friday/scc243-labs.git](https://scc-source.lancs.ac.uk/friday/scc243-labs.git))
+- [ ] Ensure that you've created **a private** git repository (I recommend cloning my template: [https://scc-source.lancs.ac.uk/friday/scc243-labs.git](https://scc-source.lancs.ac.uk/friday/scc243-labs.git))
 - [ ] From the scc-source gitlab web interface, go to 'Manage' then 'Members' and 'invite members' (button), add `@friday`
 
 ![Adding a collaborator](figs/adding-collaborator.jpg)
