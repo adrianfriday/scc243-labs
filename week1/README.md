@@ -2,14 +2,11 @@
 
 ## Submission checklist
 
-- [ ] Ensure that you've created **a private** github repository (I recommend cloning my template: [https://github.com/adrianfriday/scc243-labs.git](https://github.com/adrianfriday/scc243-labs.git)) - and click '`use this template`'
-- [ ] Go to the course moodle page, find the github repo submission form link, and submit the (https://) link to your repo (should look like `https://github.com/adrianfriday/scc243-labs.git`) ^[1]
-- [ ] From the github web interface, go to 'settings' then 'collaborators' and 'invite' (add people button) `a.friday@lancaster.ac.uk`
+- [ ] Ensure that you've created **a private** github repository (I recommend cloning my template: [https://scc-source.lancs.ac.uk/friday/scc243-labs.git](https://scc-source.lancs.ac.uk/friday/scc243-labs.git))
+- [ ] From the scc-source gitlab web interface, go to 'Manage' then 'Members' and 'invite members' (button), add `@friday`
 
 ![Adding a collaborator](figs/adding-collaborator.jpg)
 
 - [ ] Complete the [task for today](week1-task.md), ensure that you've added any documents you create to this folder [in markdown format](https://www.markdownguide.org/getting-started/)
-- [ ] Make sure you remember to 'git add' any new files you create
+- [ ] Make sure you remember to '`git add`' any new files you create
 - [ ] `Git commit` and `push` your work to the repo, you can update this at any time
-
-^[1]: Where `adrianfriday` would obviously be *your github user*, and the path ends with '.git'.
