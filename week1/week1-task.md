@@ -1,4 +1,4 @@
-# Week 1 worksheet
+# Part 2: Week 1 worksheet
 The goal of today is to explore some of the world's digital data infrastructure, and specifically, wired and wireless network connections and data centres.
 
 Time available: 1 hour:

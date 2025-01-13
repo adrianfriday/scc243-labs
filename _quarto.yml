@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "SCC243 Sustainable Computing Labs"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - week1/git_repo_setup.md
+      - week1/week1-task.md
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

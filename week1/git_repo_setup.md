@@ -18,7 +18,8 @@ Repos can generally be public or private.  You can invite collaborators to eithe
 
 ## A word on security
 
-**  You must use either HTTPS or SSH based URLs for securely pushing/pulling your code.  HTTPS is easier, since SSH would require that you [generate a public/private key pair](https://docs.gitlab.com/ee/user/ssh.html) then upload your public key to gitlab as part of your profile.  It's easier to [generate a 'personal access token'](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).  You will need your token to have both `read_repository` and `write_repository` access rights.
+* You must use either HTTPS or SSH based URLs for securely pushing/pulling your code.  HTTPS is easier, since SSH would require that you [generate a public/private key pair](https://docs.gitlab.com/ee/user/ssh.html) then upload your public key to gitlab as part of your profile.
+* It's easier to [generate a 'personal access token'](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).  You will need your token to have both `read_repository` and `write_repository` access rights.
 
 You use a personal access token instead of a password.  *You'll want to keep this somewhere safe for future use, as once created you can't see it again.  **Don't share it with anyone!***
 
