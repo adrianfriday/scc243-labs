@@ -9,7 +9,7 @@ Each week there is:
 2. sometimes I'll set a recommended essential reading
 3. there may be additional tasks (such as short pieces of reflective writing, in blog post format, especially at the start and end of the course)
 
-All the writing will be conducted in markdown (`.md` files) and submitted via a private github repository that is shared with the course convenor `(a.friday@lancaster.ac.uk)`, the link to which you need to share **in week 1** via the form linked in moodle.
+All the writing will be conducted in markdown (`.md` files) and submitted via a private git repository that is shared with the course convenor `(a.friday@lancaster.ac.uk)`.  This should be started in week 1.
 
 The labs are anticipated to be as follows:
 
