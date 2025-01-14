@@ -14,6 +14,8 @@ It'll take a while to 'get comfy' with how this works in practice.
 
 Repos can generally be public or private.  You can invite collaborators to either.  **We'd ask that all your coursework remains private to avoid unwanted code sharing.**
 
+**Create a repo** and **clone it** to your file system.  [Download my template](https://scc-source.lancs.ac.uk/friday/scc243-labs/-/archive/main/scc243-labs-main.zip) (ZIP), expand it, and copy the files and weekly subfolders into your folder.  *You should have a structure where there is a folder for each week's lab that's committed and pushed to your scc-source account by the end of this lab.*
+
 > i.e. Your repo in this case **should be private**.
 
 ## A word on security
