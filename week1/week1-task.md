@@ -6,6 +6,7 @@ Time available: 1 hour:
 * Setup git as [per these instructions](git_repo_setup.md) - 10 minutes
 * Get started with markdown, see [how to use markdown](https://www.markdownguide.org) - 10 minutes
 * This research task - ~30 minutes
+* **By the end of the week**, please add a further short markdown document '`username-me.md`' to your `week1` folder with no more than 200 words on i. how significant you think ICT is in terms of climate change (impacts, benefits); and ii. 3 things (bullets) on what you'd like to learn on this course - *this is your quick thoughts so I understand where we're coming from, not a referenced argument or essay!*
 * **Don't forget to add any files you create, commit and push your repo at the end of the lab**
 
 ## Task
