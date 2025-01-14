@@ -5,6 +5,7 @@ This is an *absolute essential*.  Submission of all work, and evidence of your a
 To set this up, go to `https://scc-source.lancs.ac.uk` and *login to create an account if you don't already have one*.
 
 * Read about [the basics of version control](https://about.gitlab.com/topics/version-control/)
+* You may find [this step by step tutorial also useful](https://www.zdnet.com/article/how-to-get-started-with-git-on-linux/), if you haven't used git from the Linux terminal before
 
 Essentially, the idea is that you 'check out' (normally) the latest version of a project from the server to your local machine.  Work on the content (mainly **markdown** text files ending in '`.md`' in this case).  **Add the new files** and **Commit** your changes (with a helpful message explaining what you've done is a key thing).  Then **push** a copy of your repo to the server with '`git push`'.
 
