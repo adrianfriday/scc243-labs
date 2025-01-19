@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -186,9 +157,9 @@ window.Quarto = {
 <li>If the device has a different power level when not in use (e.g.&nbsp;on standby or 0W if powered off when not in use), find out what this is and add it to the table</li>
 <li>Finally, add a row that calculates the number of kilowatt/hours (divide total in Watts by 1,000 and multiply by the number of hours of use) based on your estimate of use per day, week and year. For example, if you had a smart speaker that takes 5W all year round this would be:</li>
 </ol>
-<p><span class="math display">\[
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>5</mn><mo>×</mo><mn>365</mn><mo>×</mo><mn>24</mn></mrow><mn>1000</mn></mfrac><mo>=</mo><mn>43.8</mn><mi>k</mi><mi>W</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">
 \frac{5 \times 365 \times 24}{1000} = 43.8kWh
-\]</span></p>
+</annotation></semantics></math></p>
 <ul>
 <li>i.e.&nbsp;365 days in a year by 24 hours per day to get total hours used, multiplied by the power demand in Watts to get Watt-hours</li>
 <li>divide by 1000 to get kilowatt hours</li>
