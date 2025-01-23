@@ -18,7 +18,7 @@ Make sure you have an up to date copy of your coursework repo available (`git cl
 
 1. For each photo that you used last week, put a subheading that describes it
 2. Look up the carbon footprint of the device's manufacture
-3. Add a table.  Bring over the annual energy use of the device based on your use pattern.  Add a column converting this to CO$_2_e by multiplying by a conversion factor (*take care with your units!*).  In UK you can assume the energy mix is $0.207074 KgCO2_e$^[Figure from 2023, Department for Energy Security and Net Zero.]
+3. Add a table.  Bring over the annual energy use of the device based on your use pattern.  Add a column converting this to CO$_2$e by multiplying by a conversion factor (*take care with your units!*).  In UK you can assume the energy mix is **$0.207074 KgCO2_e$**^[Figure from 2023, Department for Energy Security and Net Zero.]
 4. Add a column with the carbon footprint for the device
 5. Now add a row comparing the use footprint with the embodied footprint.  Multiply the use footprint by the number of years you keep the device to get the total direct energy for that many years of use; calculate the 'footprint per year' of manufacturing footprint.
 6. You should add a row for 1, 3, 5 and 10 years.  In reality, some devices have shorter lifespans than this, but many (e.g. TVs, ovens) could last much longer.
