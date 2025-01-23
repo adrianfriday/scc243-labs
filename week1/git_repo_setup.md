@@ -1,6 +1,6 @@
 # Part 1: Setting up your version controlled repo!
 
-This is an *absolute essential*.  Submission of all work, and evidence of your achievement, will be through a 'portfolio submission' via SCC's gitlab instance `https://scc-source.lancs.ac.uk` (*this will be private to you, so you must invite '`@friday`' as a collaborator*).
+This is an *absolute essential*.  Submission of all work, and evidence of your achievement, will be through a 'portfolio submission' via SCC's gitlab instance `https://scc-source.lancs.ac.uk` (*this will be private to you, so you must invite '`@friday`' as a collaborator - please choose anything higher permission than 'Guest', e.g. 'Developer' **otherwise I can't see your files!** *).
 
 To set this up, go to `https://scc-source.lancs.ac.uk` and *login to create an account if you don't already have one*.
 
