@@ -1,14 +1,14 @@
 # Week 3 worksheet
-The goal of today is to explore the carbon footprint (related to embodied energy) of **your own** digital appliances and devices that you identified last week.  Unlike direct energy use, the energy here is required at stages of the manufacturing pipeline, so the carbon footprint relates to mining, transport, manufacturing and all the other items that come together to make your products.
+The goal of today is to explore the 'carbon footprint' (related to embodied energy) of **your own** digital appliances and devices that you identified last week.  Unlike direct energy use, the energy here is required at all stages of the manufacturing pipeline, so the carbon footprint relates to mining of raw materials, processing, transportation, manufacturing and all the other items that come together to make your products and get them in your hands.
 
 ## Cautionary note
-The carbon footprint of each device is at best an estimate as the supply chains are *very long and complex*.
+The carbon footprint of each device is at best an estimate of the average or typical embodied energy, as the supply chains are *very long and complex*.  They also differ between even similar products, and change over time (e.g. a market might source from different suppliers).
 
 1. You may get differences in estimates, or only be able to get an estimate for a device that's as similar as possible
-2. Sometimes manufacturers and resellers will list the carbon footprint, there's *always* questions we should ask about whether we can rely on the data
-3. We may have to start caring more about data quality, e.g. published peer reviews in reputable journals with 'life cycle assessments' (LCA) analysis are likely to be the most reliable sources
+2. Sometimes manufacturers and resellers will list the carbon footprint, there's *always* questions we should ask about whether we can rely on the data - data can be old, contain errors, or it may be in their interest to 'scope' the estimate to make their products look good
+3. We may have to start caring more about data quality, e.g. published peer reviews in reputable journals with 'life cycle assessments' (LCA) analysis are likely to be the most reliable sources (more on this in a later lecture)
 
-Since this is just a short lab task, approximate 'ball park' estimates are good enough.
+Since this is just a short lab task, approximate 'ball park' estimates are good enough to 'get an idea'.
 
 ## Task
 
@@ -18,7 +18,7 @@ Make sure you have an up to date copy of your coursework repo available (`git cl
 
 1. For each photo that you used last week, put a subheading that describes it
 2. Look up the carbon footprint of the device's manufacture
-3. Add a table.  Bring over the annual energy use of the device based on your use pattern.  Add a column converting this to CO$_2$e by multiplying by a conversion factor (*take care with your units!*).  In UK you can assume the energy mix is **$0.207074 KgCO2_e$**^[Figure from 2023, Department for Energy Security and Net Zero.]
+3. Add a table.  Bring over the annual energy use of the device based on your use pattern.  Add a column converting this to CO<sub>2</sub>e by multiplying by a conversion factor (*take care with your units!*).  In UK you can assume the energy mix is **0.207074 KgCO<sub>2</sub>e**^[Figure from 2023, Department for Energy Security and Net Zero.]
 4. Add a column with the carbon footprint for the device
 5. Now add a row comparing the use footprint with the embodied footprint.  Multiply the use footprint by the number of years you keep the device to get the total direct energy for that many years of use; calculate the 'footprint per year' of manufacturing footprint.
 6. You should add a row for 1, 3, 5 and 10 years.  In reality, some devices have shorter lifespans than this, but many (e.g. TVs, ovens) could last much longer.
@@ -35,7 +35,7 @@ Don't forget to `git add` your new file, `commit` and `push` to the server at le
 ## Starting points
 Here are some useful digital resources to help.  As before, very interested in which ones (or others) you actually use.  Don't forget, these are starting points, I'm not guaranteeing their quality!  *You should always have an open and enquring mind when it comes to data sources!!*
 
-* [CO$_2$ Everything](https://www.co2everything.com) - volunteer effort, I've not checked the data!
+* [CO<sub>2</sub> Everything](https://www.co2everything.com) - volunteer effort, I've not checked the data!
 * [Cloud carbon footprint calculator](https://www.cloudcarbonfootprint.org)
 * [Internet use footprint](https://ecotree.green/en/calculate-digital-co2)
 * [University of Oxford IT provided figures](https://www.it.ox.ac.uk/article/environment-and-it) - worth reading anyway
