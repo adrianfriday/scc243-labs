@@ -25,7 +25,7 @@ Make sure you have an up to date copy of your coursework repo available (`git cl
     1. duration (see `--timeout`)
     2. CPU intensity of workload (see `--workload-load`)
     3. not too much that isn't CPU (as that's what we're primarily measuring) (see `--cpu`)
-    There are several examples in the [stress-ng reference guide]().
+    There are several examples in the [stress-ng reference guide](https://wiki.ubuntu.com/Kernel/Reference/stress-ng).
     
     It's easy to have a test that runs for too little, or too much time - so do a couple of test runs before taking your measurements.
 3. Download [this python script](profiler.py) which we'll use for energy reporting from [Intel's RAPL API](https://greencompute.uk/Measurement/RAPL).  This is a python script and **needs to be executable** - you may need to change it's file permissions (e.g. `chmod u+x profiler.py` in the terminal shell)
