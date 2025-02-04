@@ -47,7 +47,7 @@ Don't forget to `git add` your new file, `commit` and `push` to the server at le
 You can [download and build the stress-ng framework](https://github.com/ColinIanKing/stress-ng), e.g. using `git clone`, then build it using `make`.  However, **the easiest way** to run the framework is as follows (using `docker`):
 
 ```bash
-docker run --rm colinianking/stress-ng --help
+docker run --rm ghcr.io/colinianking/stress-ng --help
 ```
 
 This will download the code and run it for you with the parameters `--help` in this case.
