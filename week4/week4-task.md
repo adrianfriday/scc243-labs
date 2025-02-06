@@ -3,6 +3,8 @@ The goal of today is to learn how to take energy measurements associated with ru
 
 **In short: I strongly recommend you do this on the lab machine, and not on your laptop.**
 
+Please *scroll down* to see **running the stress-ng framework section before leaping in!**.
+
 ## Taking good measurements
 
 Really, we're taking a snapshot of the energy use of the CPU from the time we start measuring to the time the task is complete.

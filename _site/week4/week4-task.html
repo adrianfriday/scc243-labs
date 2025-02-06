@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>week3-task – SCC243 Sustainable Computing Labs</title>
+<title>week4-task – SCC243 Sustainable Computing Labs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -105,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Week 2 worksheet</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../week3/week3-task.html" aria-current="page"> 
+    <a class="nav-link" href="../week3/week3-task.html"> 
 <span class="menu-text">Week 3 worksheet</span></a>
   </li>  
 </ul>
@@ -124,12 +158,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-3-worksheet" id="toc-week-3-worksheet" class="nav-link active" data-scroll-target="#week-3-worksheet">Week 3 worksheet</a>
+  <li><a href="#week-4-worksheet" id="toc-week-4-worksheet" class="nav-link active" data-scroll-target="#week-4-worksheet">Week 4 worksheet</a>
   <ul class="collapse">
-  <li><a href="#cautionary-note" id="toc-cautionary-note" class="nav-link" data-scroll-target="#cautionary-note">Cautionary note</a></li>
+  <li><a href="#taking-good-measurements" id="toc-taking-good-measurements" class="nav-link" data-scroll-target="#taking-good-measurements">Taking good measurements</a></li>
   <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task">Task</a></li>
+  <li><a href="#running-the-stress-ng-framework" id="toc-running-the-stress-ng-framework" class="nav-link" data-scroll-target="#running-the-stress-ng-framework">Running the stress-ng framework</a>
+  <ul class="collapse">
+  <li><a href="#important-note" id="toc-important-note" class="nav-link" data-scroll-target="#important-note">Important note</a></li>
+  </ul></li>
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning outcomes</a></li>
-  <li><a href="#starting-points" id="toc-starting-points" class="nav-link" data-scroll-target="#starting-points">Starting points</a></li>
+  <li><a href="#fun" id="toc-fun" class="nav-link" data-scroll-target="#fun">Fun</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -140,66 +178,82 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="week-3-worksheet" class="level1">
-<h1>Week 3 worksheet</h1>
-<p>The goal of today is to explore the ‘carbon footprint’ (related to embodied energy) of <strong>your own</strong> digital appliances and devices that you identified last week. Unlike direct energy use, the energy here is required at all stages of the manufacturing pipeline, so the carbon footprint relates to mining of raw materials, processing, transportation, manufacturing and all the other items that come together to make your products and get them in your hands.</p>
-<section id="cautionary-note" class="level2">
-<h2 class="anchored" data-anchor-id="cautionary-note">Cautionary note</h2>
-<p>The carbon footprint of each device is at best an estimate of the average or typical embodied energy, as the supply chains are <em>very long and complex</em>. They also differ between even similar products, and change over time (e.g.&nbsp;a market might source from different suppliers).</p>
+<section id="week-4-worksheet" class="level1">
+<h1>Week 4 worksheet</h1>
+<p>The goal of today is to learn how to take energy measurements associated with running specific software. We’ll be indirectly using the Intel RAPL energy reporting from the CPU in your lab machine. Note, this is specific to Intel processors, so will not work directly on anything else (e.g.&nbsp;a Mac with Apple Silicon, Google Chromebook etc.)</p>
+<p><strong>In short: I strongly recommend you do this on the lab machine, and not on your laptop.</strong></p>
+<p>Please <em>scroll down</em> to see <strong>running the stress-ng framework section before leaping in!</strong>.</p>
+<section id="taking-good-measurements" class="level2">
+<h2 class="anchored" data-anchor-id="taking-good-measurements">Taking good measurements</h2>
+<p>Really, we’re taking a snapshot of the energy use of the CPU from the time we start measuring to the time the task is complete.</p>
 <ol type="1">
-<li>You may get differences in estimates, or only be able to get an estimate for a device that’s as similar as possible</li>
-<li>Sometimes manufacturers and resellers will list the carbon footprint, there’s <em>always</em> questions we should ask about whether we can rely on the data - data can be old, contain errors, or it may be in their interest to ‘scope’ the estimate to make their products look good</li>
-<li>We may have to start caring more about data quality, e.g.&nbsp;published peer reviews in reputable journals with ‘life cycle assessments’ (LCA) analysis are likely to be the most reliable sources (more on this in a later lecture)</li>
+<li>This could catch any computation going on, not just your code, so we should aim for <strong>isolation</strong>, i.e.&nbsp;trying not to get data that’s confounded by other software and hardware running at the same time</li>
+<li>Ideally, recognise that the measurement framework may add additional <strong>overhead</strong> (hopefully in this case it should be relatively constant for all tests)</li>
+<li>Understanding how much is <strong>missed</strong> by what we are able to measure (for example, RAPL measures the CPU, but not the memory, I/O subsystems or anything else that makes up the total system energy)</li>
+<li><strong>Repeatable</strong> and <strong>representative</strong> test selection. We should run tests more than once and take an average (arithmetic mean) and standard deviation. We should report each run and the average. I’d suggest running each test 5 times.</li>
 </ol>
-<p>Since this is just a short lab task, approximate ‘ball park’ estimates are good enough to ‘get an idea’.</p>
+<p>Normally, test selection would involve picking representative use cases or data sets to ensure that data or interaction dependent behaviour is captured. In our case for this lab, we’re going to use a CPU stress testing framework to make the test development process simpler.</p>
 </section>
 <section id="task" class="level2">
 <h2 class="anchored" data-anchor-id="task">Task</h2>
 <p>Time available: 1 hour:</p>
-<p>Make sure you have an up to date copy of your coursework repo available (<code>git clone</code> or <code>git pull</code> as needed to ensure you are up to date with the server), as before. In the ‘<code>week3</code>’ folder create a new markdown document called <code>username-week3-labnotes.md</code>, where ‘username’ is of course <em>your username</em>!</p>
+<p>Make sure you have an up to date copy of your coursework repo available (<code>git clone</code> or <code>git pull</code> as needed to ensure you are up to date with the server), as before. In the ‘<code>week4</code>’ folder create a new markdown document called <code>username-week4-labnotes.md</code>, named with your user as in past weeks.</p>
 <ol type="1">
-<li>For each photo that you used last week, put a subheading that describes it</li>
-<li>Look up the carbon footprint of the device’s manufacture</li>
-<li>Add a table. Bring over the annual energy use of the device based on your use pattern. Add a column converting this to CO<sub>2</sub>e by multiplying by a conversion factor (<em>take care with your units!</em>). In UK you can assume the energy mix is <strong>0.207074 KgCO<sub>2</sub>e</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-<li>Add a column with the carbon footprint for the device</li>
-<li>Now add a row comparing the use footprint with the embodied footprint. Multiply the use footprint by the number of years you keep the device to get the total direct energy for that many years of use; calculate the ‘footprint per year’ of manufacturing footprint.</li>
-<li>You should add a row for 1, 3, 5 and 10 years. In reality, some devices have shorter lifespans than this, but many (e.g.&nbsp;TVs, ovens) could last much longer.</li>
-<li>Add a subsection <code>## Reflections</code> with a short paragraph on your thoughts on how the various assets compare with one another, especially reflecting on the use phase related energy against the manufacturing or embodied energy.</li>
+<li><p>Read about <code>stress-ng</code> <a href="https://github.com/ColinIanKing/stress-ng">a system stress testing framework</a></p></li>
+<li><p>Select 3 tests that exercise the CPU (as that’s what we’re going to measure). There are <em>a lot</em> of options. In selecting your tests you really want a mixture of:</p>
+<ol type="1">
+<li>duration (see <code>--timeout</code>)</li>
+<li>CPU intensity of workload (see <code>--workload-load</code>)</li>
+<li>not too much that isn’t CPU (as that’s what we’re primarily measuring) (see <code>--cpu</code>) There are several examples in the <a href="https://wiki.ubuntu.com/Kernel/Reference/stress-ng">stress-ng reference guide</a>.</li>
+</ol>
+<p>It’s easy to have a test that runs for too little, or too much time - so do a couple of test runs before taking your measurements.</p></li>
+<li><p>Download <a href="profiler.py">this python script</a> which we’ll use for energy reporting from <a href="https://greencompute.uk/Measurement/RAPL">Intel’s RAPL API</a>. This is a python script and <strong>needs to be executable</strong> - you may need to change it’s file permissions (e.g.&nbsp;<code>chmod u+x profiler.py</code> in the terminal shell)</p></li>
+<li><p>In your markdown report, add an introductory paragraph on what you plan to measure and your ‘method statement’ of how you’ve conducted your tests</p></li>
+<li><p>For each test case, add a subsection with the goal of the test, the command line you’ve used and a table with the results.</p></li>
+<li><p>The table should have the results of each test run, how much time it took and how many Joules of energy</p></li>
+<li><p>Finish the table with the average time taken and standard deviation. You could use a spreadsheet like excel, or a stats package like R (see <a href="https://education.rstudio.com/learn/beginner/">getting started reference</a>)</p></li>
+<li><p>For each test case add a summary converting from Joules to Watts (e.g.&nbsp;<a href="https://www.rapidtables.com/calc/electric/Joule_to_Watt_Calculator.html">using a converter</a>, or by hand):</p>
+<p>Recall, the power P in watts (W) is equal to the energy E in joules (J), divided by the time period t in seconds (s) - <em>take care with your units!!</em></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mi>E</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">P = \frac{E}{t}</annotation></semantics></math></p></li>
+<li><p>Add a subsection called <code>## Reflections</code> which summarises what you’ve found, and any personal observations on the number of Watt’s associated with the computations. How much variability was there between the tests; how does the energy compare with say a 12W LED, or watching TV for an hour?</p></li>
 </ol>
 <p>Don’t forget to <code>git add</code> your new file, <code>commit</code> and <code>push</code> to the server at least at the end of the task.</p>
+</section>
+<section id="running-the-stress-ng-framework" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-stress-ng-framework">Running the stress-ng framework</h2>
+<p>You can <a href="https://github.com/ColinIanKing/stress-ng">download and build the stress-ng framework</a>, e.g.&nbsp;using <code>git clone</code>, then build it using <code>make</code>. However, <strong>the easiest way</strong> to run the framework is as follows (using <code>docker</code>):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> ghcr.io/colinianking/stress-ng <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will download the code and run it for you with the parameters <code>--help</code> in this case.</p>
+<p>To run a test, pass in the configuration parameters to <code>stress-ng</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> ghcr.io/colinianking/stress-ng <span class="at">--cpu</span> 1 <span class="at">--timeout</span> 1m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To run a test and measure it’s energy, try passing the docker command to the <code>profiler.py</code> python script:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./profiler.py</span> <span class="st">"docker run --rm ghcr.io/colinianking/stress-ng --cpu 1 --timeout 1m"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note: there are double quotes around the parameter to the profiler script.</p>
+<section id="important-note" class="level3">
+<h3 class="anchored" data-anchor-id="important-note">Important note</h3>
+<p><code>docker</code> will download the code for you, but it will take time and resources to do so. You will <em>want to run this once</em> <strong>before</strong> you start doing your batches of 5 test energy measurement runs <strong>to avoid polluting your results datasets</strong>!</p>
+</section>
 </section>
 <section id="learning-outcomes" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h2>
 <ul>
-<li>You should have an appreciation of how the embodied energy varies with the appliances and devices you use most often</li>
-<li>You should appreciate how embodied energy is amortised over the life of the device, and how this varies with longevity</li>
-<li>You should see how use phase and embodied phase varies considerably across devices</li>
-<li>You should be gaining some or enhancing your ‘carbon literacy’.</li>
+<li>You should have an appreciation of how energy varies with computation</li>
+<li>Should know how to take measurements in a systematic way</li>
+<li>Should know how each run varies at a system level, and the challenges of apportioning to specific running software</li>
+<li>A ‘ready reckoning’ of the bounds for energy saving due to reducing load on the CPU</li>
 </ul>
 </section>
-<section id="starting-points" class="level2">
-<h2 class="anchored" data-anchor-id="starting-points">Starting points</h2>
-<p>Here are some useful digital resources to help. As before, very interested in which ones (or others) you actually use. Don’t forget, these are starting points, I’m not guaranteeing their quality! <em>You should always have an open and enquring mind when it comes to data sources!!</em></p>
+<section id="fun" class="level2">
+<h2 class="anchored" data-anchor-id="fun">Fun</h2>
 <ul>
-<li><a href="https://www.co2everything.com">CO<sub>2</sub> Everything</a> - volunteer effort, I’ve not checked the data!</li>
-<li><a href="https://www.cloudcarbonfootprint.org">Cloud carbon footprint calculator</a></li>
-<li><a href="https://ecotree.green/en/calculate-digital-co2">Internet use footprint</a></li>
-<li><a href="https://www.it.ox.ac.uk/article/environment-and-it">University of Oxford IT provided figures</a> - worth reading anyway</li>
-<li>For fun, Small World <a href="https://www.sw-consulting.co.uk/carbon-calculator">Personal carbon footprint calculator</a></li>
-<li><a href="https://www.ethicalconsumer.org">Ethical consumer guides, including technology</a></li>
+<li>A nice console based graph of your energy use (<a href="https://github.com/stolk/energygraph">energygraph</a>). Note, you do not need to (and <strong>should not</strong>) use <code>sudo</code> on our machines - we’ve opened up the RAPL permissions on the lab machines. Just <code>./energygraph</code> if you’re in the folder where you’ve downloaded and built it.</li>
 </ul>
 
 
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Figure from 2023, Department for Energy Security and Net Zero.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
