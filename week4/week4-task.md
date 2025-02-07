@@ -39,7 +39,9 @@ Make sure you have an up to date copy of your coursework repo available (`git cl
 
    Recall, the power P in watts (W) is equal to the energy E in joules (J), divided by the time period t in seconds (s) - *take care with your units!!*
    
-   $P = \frac{E}{t}$
+   $$
+   P = \frac{E}{t}
+   $$
    
 9. Add a subsection called `## Reflections` which summarises what you've found, and any personal observations on the number of Watt's associated with the computations.  How much variability was there between the tests; how does the energy compare with say a 12W LED, or watching TV for an hour?
 
