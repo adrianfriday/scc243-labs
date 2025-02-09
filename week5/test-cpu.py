@@ -48,30 +48,24 @@ scaler_y.fit(y_train.reshape(-1, 1))
 y_train = scaler_y.transform(y_train.reshape(-1, 1)).ravel()
 y_test = scaler_y.transform(y_test.reshape(-1, 1)).ravel()
 
-# Add GPU support
-
-from sklearnex import patch_sklearn
-
-patch_sklearn()
-
 # Find line of best fit
 
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression 
 from sklearn.model_selection import cross_validate
 
 params = {"n_jobs": -1, "copy_X": False}
 start = timer()
 model = LinearRegression(**params).fit(x_train, y_train)
-train_patched = timer() - start
+train_unpatched = timer() - start
 
 # Forecast values of y
 
 y_predict = model.predict(x_test)
 mse_metric_opt = metrics.mean_squared_error(y_test, y_predict)
-print(f"GPU Scikit-learn MSE: {mse_metric_opt} in {train_patched}s")
+print(f"CPU Scikit-learn MSE: {mse_metric_opt} in {train_unpatched}s")
 
 # Cross validate
 
 scores = cross_validate(model, x_train, y_train, cv=10)
-post_validation = timer() - train_patched
+post_validation = timer() - train_unpatched
 print(f"Scores {scores} in {post_validation}s")

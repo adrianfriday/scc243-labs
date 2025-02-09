@@ -176,23 +176,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="week-5-worksheet" class="level1">
 <h1>Week 5 worksheet</h1>
-<p>The goal of today is to explore the effect of offloading computation from the CPU to the GPU, exploring the maximum potential for reducing the energy implicated with doing so. The GPU in most lab machines is the onboard Intel graphics which is considerably lower power than a dedicated GPU card found in most gaming machines and high end AI or graphics machines. <em>You should keep this in mind when generalising from your findings!</em></p>
-<p><strong>We will use the same measurement setup as last week, so I again strongly recommend you do this on the lab machine, and not on your home machine or laptop.</strong></p>
+<p>The goal of today is to explore the effect of offloading computation from the CPU to the GPU, exploring the maximum potential for reducing the energy implicated with doing so. The GPU in most lab machines on campus is the onboard Intel graphics which is considerably lower power draw than a dedicated GPU found in most gaming machines and high end AI or graphics machines. Recall, that processors increasingly have other co-processors, such as Intel’s NPU, for accelerating operations for machine learning - which also might perform specialist parallel instructions with good compute/energy performance. <em>You should keep this in mind when generalising from your findings!</em></p>
+<p><strong>We will use the same measurement setup as last week, so I again strongly recommend you do this on the lab machine, and not on your home machine or laptop. It does not work on the VM with virtualised hardware.</strong></p>
 <section id="taking-good-measurements" class="level2">
 <h2 class="anchored" data-anchor-id="taking-good-measurements">Taking good measurements</h2>
 <p>Reminder:</p>
 <ol type="1">
 <li>You should aim to take good, repeatable measurements, <strong>minimising interference from other tasks on the system</strong>.</li>
-<li>You should run each test multiple times to get multiple measurements and take a mean and standard deviation.</li>
-<li>Measuring the GPU is more difficult, so you will need to look more closely at the data from the profiling script to isolate the CPU cores and GPU from the rest, see below.</li>
-<li>I’d suggest running each test 5 times, providing all of the readings in your report.</li>
-<li>You should do a ‘warmup’ run before taking your measurements, not least because this task <strong>downloads a large data file at startup</strong>. Be careful <strong>not to include</strong> the download and data loading time in your benchmarks.</li>
+<li>You should run each test multiple times to get several measurements and take a mean and standard deviation.</li>
+<li>Measuring the GPU is more difficult, so you will need to look more closely at the numbers coming back from the profiling script to isolate the CPU cores and GPU from the rest, see below.</li>
+<li>I’d suggest running <strong>each test 5 times</strong>, providing <strong>all</strong> of the readings in your report markdown fie.</li>
+<li>You should do a ‘warmup’ run before taking your measurements, not least because this task <strong>downloads a large data file at startup</strong>. Be careful <strong>not to include</strong> the download and data loading time in your benchmark results.</li>
 </ol>
-<p>We’re going to use a test which forecasts data points from a linear regression <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> from python for <a href="https://uxlfoundation.github.io/scikit-learn-intelex/latest/samples/linear_regression.html">this task</a> and <a href="https://scikit-learn.org/stable/"><code>scitkit-learn</code></a> extension by Intel).</p>
+<p>We’re going to use a test which forecasts data points from a <a href="https://www.geeksforgeeks.org/ml-linear-regression/">linear regression</a> using python for <a href="https://uxlfoundation.github.io/scikit-learn-intelex/latest/samples/linear_regression.html">this task</a> which utilises the <a href="https://scikit-learn.org/stable/"><code>scitkit-learn</code></a> package and GPU extension by Intel).</p>
 </section>
 <section id="understanding-intel-rapl-channels" class="level2">
 <h2 class="anchored" data-anchor-id="understanding-intel-rapl-channels">Understanding Intel RAPL channels</h2>
-<p>The profiler script will give you a block of output something like this:</p>
+<p>The profiler script will give you a block of output like this:</p>
 <pre><code>Performance Metrics:
 Execution time: 6402.042 ms (6402042057 ns)
 CPU time (user): 16.690 seconds
@@ -235,24 +235,26 @@ CPU Power Usage (RAPL):
 </tr>
 </tbody>
 </table>
-<p>Note that 0.008 Joules is tiny, so probably more significant is the difference between the package and CPU channels, in this case; or estimating the GPU by taking the difference between the CPU and accelerated variants of the test. The energy saved should really be <em>not just the difference in load</em>, but <em>also the reduced execution time</em>. <strong>You’ll need to take this into account.</strong></p>
+<p>Note that 0.008 Joules is tiny, so probably more significant in interpreting your results is the difference between the package and CPU channels and estimating ‘what is saved’ by the GPU by taking workload from the processor between test variants. The energy saved should really be <em>not just the difference in load</em>, but <em>also the reduced execution time</em>. <strong>You’ll need to take this into account and explain your working out in your markdown report.</strong></p>
 </section>
 <section id="task" class="level2">
 <h2 class="anchored" data-anchor-id="task">Task</h2>
 <p>Time available: 1 hour:</p>
 <p>Make sure you have an up to date copy of your coursework repo available. In the ‘<code>week5</code>’ folder create a new markdown document called <code>username-week5-labnotes.md</code>.</p>
 <ol type="1">
-<li><p>Run the terminal, and switch into a python virtual environment for our course<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/lib/python-venv/scc-243/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Download the <a href="../week4/profiler.py">profiler.py</a> script we used last week (or copy it from last week’s folder - it hasn’t changed.)</p></li>
-<li><p>Download the two test files <a href="test-cpu.py">test-cpu.py</a> and <a href="test-gpu.py">test-gpu.py</a>. This is the same code, the only difference being that with <code>test-cpu.py</code> all the calculation is done on the CPU.</p></li>
+<li><p>Run the terminal, and switch into a python virtual environment for our course<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/lib/python-venv/scc-243/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This should provide all the python packages we’re going to use without the need to download and install them.</p></li>
+<li><p>Download the <a href="../week4/profiler.py">profiler.py</a> script we used last week (or copy it from last week’s folder - <em>it hasn’t changed</em>.)</p></li>
+<li><p>Download the two test files <a href="test-cpu.py">test-cpu.py</a> and <a href="test-gpu.py">test-gpu.py</a>. This is the same code, the only difference being that with <code>test-cpu.py</code> all the calculation is done on the CPU cores.</p></li>
 <li><p>Run the test case to ‘warm up’ the system (<em>load packages and data files for the first time</em>).</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> test-cpu.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Run each test case at least 5 times, noting down the test case, energy and time taken for each. e.g.&nbsp;using:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./profiler.py</span> <span class="st">"python test-cpu.py"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Document your experiment in markdown format, using markdown tables as last week. Add an <em>introductory paragraph</em> on what you plan to measure and your ‘method statement’ of how you’ve conducted your tests</p></li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./profiler.py</span> <span class="st">"python test-cpu.py"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Important note: the profiler.py swallows the output from the task, so I’d recommend running the task to verify it’s running ok, before running under the energy profiler. Especially, if the task completion time and energy used is suspiciously small!</strong></p></li>
+<li><p>Document your experiment <em>in markdown format</em>, using markdown tables as last week. Add an <em>introductory paragraph</em> on what you plan to measure and your ‘method statement’ of how you’ve conducted your tests. <em>Take care to explain how you are calculating the energy saved.</em></p></li>
 <li><p>For each test case, add a subsection with the goal of the test, <em>the command line</em> you’ve used and a table with the results.</p></li>
-<li><p>The table should have the results of each test run, how much time it took and how many Joules of energy</p></li>
+<li><p>The table should have the results of each test run, how much time it took and how many Joules of energy and total watt/hours.</p></li>
 <li><p>Finish the table with the average time taken and standard deviation.</p></li>
 <li><p>Add a subsection called <code>## Reflections</code> which summarises what you’ve found, and any personal observations on the number of Watt’s associated with the computations. How much energy was saved by offloading from CPU to GPU and speeding up the task? If you ran this task for an entire day, week, month or year how many kWh would be used for CPU and GPU variants?</p></li>
 </ol>
@@ -262,7 +264,7 @@ CPU Power Usage (RAPL):
 <h2 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h2>
 <ul>
 <li>You should have an appreciation of how energy varies with CPU vs.&nbsp;GPU computation</li>
-<li>Should reinforce your expirimental method, i.e.&nbsp;how to take measurements and report them in a systematic way</li>
+<li>Should reinforce your expirimental method, i.e.&nbsp;how to take measurements, calculate a difference in energy saved and report them in a systematic way</li>
 <li>A ‘ready reckoning’ of the bounds for energy saving due to reducing load on the CPU by shifting workloads to the GPU</li>
 <li>An appreciation of how efficient GPU cores are for offloading parallel mathematical tasks (e.g.&nbsp;vector matrix operations)</li>
 </ul>
@@ -275,8 +277,7 @@ CPU Power Usage (RAPL):
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>About <a href="https://www.geeksforgeeks.org/ml-linear-regression/">linear regression</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p><a href="https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments">About python virtual environments</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments">About python virtual environments</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
