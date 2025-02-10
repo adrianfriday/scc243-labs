@@ -87,3 +87,7 @@ Don't forget to `git add` your new file, `commit` and `push` to the server at le
 * Should reinforce your expirimental method, i.e. how to take measurements, calculate a difference in energy saved and report them in a systematic way
 * A 'ready reckoning' of the bounds for energy saving due to reducing load on the CPU by shifting workloads to the GPU
 * An appreciation of how efficient GPU cores are for offloading parallel mathematical tasks (e.g. vector matrix operations)
+
+<!-- ## Going further
+
+* [https://pawseysc.github.io/sc20-gpu-offloading/](https://pawseysc.github.io/sc20-gpu-offloading/) -->

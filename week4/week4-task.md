@@ -82,3 +82,5 @@ Note: there are double quotes around the parameter to the profiler script.
 
 ## Fun
 * A nice console based graph of your energy use ([energygraph](https://github.com/stolk/energygraph)).  Note, you do not need to (and **should not**) use `sudo` on our machines - we've opened up the RAPL permissions on the lab machines.  Just `./energygraph` if you're in the folder where you've downloaded and built it.
+
+<!-- * [Power measurement tools on MacOS](https://www.green-coding.io/blog/power-measurement-on-macos/) -->

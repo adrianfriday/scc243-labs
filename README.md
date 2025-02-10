@@ -19,7 +19,7 @@ The labs are anticipated to be as follows:
 | 2 | My digital footprint survey/ photos | [week2](week2) |
 | 3 | Workload footprint estimation | [week3](week3) |
 | 4 | Measurement lab | [week4](week4) |
-| 5 | Green AI measurement lab | week5<!-- [week5](week5) --> |
+| 5 | Green AI measurement lab | [week5](week5) |
 | 6 | Topic & reading selection | week6<!-- [week6](week6) --> |
 | 7 | Annotated references | week7<!-- [week7](week7) --> |
 | 8 | Script development  | week8<!-- [week8](week8) --> |
