@@ -11,7 +11,7 @@ Reminder:
 2. You should run each test multiple times to get several measurements and take a mean and standard deviation.
 3. Measuring the GPU is more difficult, so you will need to look more closely at the numbers coming back from the profiling script to isolate the CPU cores and GPU from the rest, see below.
 4. I'd suggest running **each test 5 times**, providing **all** of the readings in your report markdown fie.
-5. You should do a 'warmup' run before taking your measurements, not least because this task **downloads a large data file at startup**.  Be careful **not to include** the download and data loading time in your benchmark results.
+5. You should do a 'warmup' run before taking your measurements, not least because this task **downloads a large data file at startup**.  Be careful **not to include** the download and data loading time in your benchmark results.  **Take care also to remove or not include the data file in your git repo!**
 
 We're going to use a test which forecasts data points from a [linear regression](https://www.geeksforgeeks.org/ml-linear-regression/) using python for [this task](https://uxlfoundation.github.io/scikit-learn-intelex/latest/samples/linear_regression.html) which utilises the [`scitkit-learn`](https://scikit-learn.org/stable/) package and GPU extension by Intel).
 
@@ -80,7 +80,7 @@ Make sure you have an up to date copy of your coursework repo available.  In the
 7. Finish the table with the average time taken and standard deviation.
 8. Add a subsection called `## Reflections` which summarises what you've found, and any personal observations on the number of Watt's associated with the computations.  How much energy was saved by offloading from CPU to GPU and speeding up the task?  If you ran this task for an entire day, week, month or year how many kWh would be used for CPU and GPU variants?
 
-Don't forget to `git add` your new file, `commit` and `push` to the server at least at the end of the task.
+Don't forget to `git add` your new file, `commit` and `push` to the server at least at the end of the task.  **Take care not to add the 'data' folder to your git repository - it contains an enormous data file that you don't need to keep!**  You can remove it with `git rm -r data` or on `scc-source` if you need to.
 
 ## Learning outcomes
 * You should have an appreciation of how energy varies with CPU vs. GPU computation
