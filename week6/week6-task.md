@@ -66,7 +66,7 @@ Essentially, you just want to make it clear you're going to record them for a po
 :::{.callout-warning}
 You *should avoid* including copyright content where possible.
 
-*There should be no more than 30% of the content from sources other than you!  Any clips from other sources should be short, e.g. no more than one or two sentences and should not be edited together to form the bulk of the content.*
+*There should be no more than 30% of the audio from sources other than you!  Any clips from other sources should be short, e.g. no more than one or two sentences and should not be edited together to form the bulk of the content.*
 :::
 
 If you *do* choose to incorporate short sections of copyright material to illustrate positions or points from other sources e.g. short audio clips from online podcasts or talks, then you should not put your podcast in the public domain.  You should also clearly state that it contains copyright materials in the accompanying notes that you submit in week 10.  If the content, e.g. sound track, is rights free or needs attribution, then you should also put this in your `week10-notes.md` markdown file.
