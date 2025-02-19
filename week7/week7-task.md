@@ -14,6 +14,11 @@ Today's goal is to find evidence that lets you explore positions, identify quote
 
 2. Your goal today is to create an **annotated bibliography**, so start with this main markdown heading.  The annotated bibliography is a full reference citation for each source, or URL as appropriate.
 
+   For example, a full citation to Fretag et al. looks like:
+   
+   Freitag, C., Berners-Lee, M., Widdicks, K., Knowles, B., Blair, G. S., and Friday, A. The
+   real climate and transformative impact of ICT: A critique of estimates, trends, and regulations. Patterns. 2, 9 (2021), 100340. [doi: 10.1016/j.patter.2021.100340](https://doi.org/10.1016/j.patter.2021.100340)
+
 3. Then you should add 3 things: 1. a sentence on why you've chosen it.  2. a sentence or two on why you trust it, clearly stating the criteria you've explored to evidence this trust.  Then 3. a third sentence on the threat to validity, i.e. is there any reason you don't trust it, or any limitation we should be concerned about.
 
 4. Remember to: `add`, `commit` and `push` any new files you've created.
