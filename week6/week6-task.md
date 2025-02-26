@@ -1,7 +1,10 @@
 # Week 6 worksheet
 
+
+::: {.callout-warning}
 ### Use of AI
 **Amber**: See [AI and academic practice framework](https://portal.lancaster.ac.uk/ask/study/developing-academic-skills/using-ai-in-your-learning-and-assessment/). *AI can be used to help you search for evidence sources and explore opinions on topics.  AI **should not** be used to generate the script or podcast audio.  You should state clearly in a section in your reflective report for the podcast in week 10, how AI has been used.*  Take **great care**, as AI can easily hallucinate evidence and references *that don't in fact exist!*.  I highly recommend [this short online module](https://thebullshitmachines.com) on what LLMs can and can't do, it's really interesting, informative and thought provoking!
+:::
 
 Weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss your core research question, approach, critical selection of evidence and materials.  Plus to learn and practice using the audio editing and recording software (`Audacity`).
 
