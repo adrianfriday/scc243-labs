@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>week4-task – SCC243 Sustainable Computing Labs</title>
+<title>week8-task – SCC243 Sustainable Computing Labs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -158,16 +124,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-4-worksheet" id="toc-week-4-worksheet" class="nav-link active" data-scroll-target="#week-4-worksheet">Week 4 worksheet</a>
+  <li><a href="#week-8-worksheet" id="toc-week-8-worksheet" class="nav-link active" data-scroll-target="#week-8-worksheet">Week 8 worksheet</a>
   <ul class="collapse">
-  <li><a href="#taking-good-measurements" id="toc-taking-good-measurements" class="nav-link" data-scroll-target="#taking-good-measurements">Taking good measurements</a></li>
-  <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task">Task</a></li>
-  <li><a href="#running-the-stress-ng-framework" id="toc-running-the-stress-ng-framework" class="nav-link" data-scroll-target="#running-the-stress-ng-framework">Running the stress-ng framework</a>
-  <ul class="collapse">
-  <li><a href="#important-note" id="toc-important-note" class="nav-link" data-scroll-target="#important-note">Important note</a></li>
-  </ul></li>
+  <li><a href="#task-3-script-your-podcast" id="toc-task-3-script-your-podcast" class="nav-link" data-scroll-target="#task-3-script-your-podcast">Task 3: script your podcast</a></li>
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning outcomes</a></li>
-  <li><a href="#fun" id="toc-fun" class="nav-link" data-scroll-target="#fun">Fun</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -178,79 +138,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="week-4-worksheet" class="level1">
-<h1>Week 4 worksheet</h1>
-<p>The goal of today is to learn how to take energy measurements associated with running specific software. We’ll be indirectly using the Intel RAPL energy reporting from the CPU in your lab machine. Note, this is specific to Intel processors, so will not work directly on anything else (e.g.&nbsp;a Mac with Apple Silicon, Google Chromebook etc.)</p>
-<p><strong>In short: I strongly recommend you do this on the lab machine, and not on your laptop.</strong></p>
-<p>Please <em>scroll down</em> to see <strong>running the stress-ng framework section before leaping in!</strong>.</p>
-<section id="taking-good-measurements" class="level2">
-<h2 class="anchored" data-anchor-id="taking-good-measurements">Taking good measurements</h2>
-<p>Really, we’re taking a snapshot of the energy use of the CPU from the time we start measuring to the time the task is complete.</p>
+<section id="week-8-worksheet" class="level1">
+<h1>Week 8 worksheet</h1>
+<p>Weeks 6-10 are to be used to produce <strong>a 10 minute audio podcast</strong> exploring interesting and contemporary digital sustainability research questions. You should use the labs to discuss any further reflections on your choice of core research question, and critically explore the evidence for and against that you’ve identified.</p>
+<p><em>Especially important is to clear up any concerns you may have as to whether the evidence is sufficiently good, and whether your annotated bibliography from last week, is ok.</em></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reminder on AI use policy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Amber</strong>: See <a href="https://portal.lancaster.ac.uk/ask/study/developing-academic-skills/using-ai-in-your-learning-and-assessment/">AI and academic practice framework</a>. <em>AI can be used to help you search for evidence sources and explore opinions on topics.</em> <strong>AI should not be used to generate the script or podcast audio</strong>.</p>
+</div>
+</div>
+<section id="task-3-script-your-podcast" class="level2">
+<h2 class="anchored" data-anchor-id="task-3-script-your-podcast">Task 3: script your podcast</h2>
+<p>You should have selected the topic of your podcast and found evidence for arguing your position. Please discuss as necessary any concerns about this with the staff in your lab.</p>
+<p>Today’s goal is create a script that structures your podcast and draws the links from the points you plan to make back to the evidence sources, and/ or sources of media you plan to incorporate (own recording, quote from source X, from recording Y from A time to B time).</p>
+<p><strong>This is not an exercise in being able to use generative AI to create a podcast.</strong> e.g.&nbsp;<a href="https://www.descript.com/tools/podcast-script-generator">descript</a>.</p>
+<p>But, <strong>do</strong> think about the structure of your podcast. Podcasts usually have a ‘shape’ or overall structure to them:</p>
+<ul>
+<li><a href="https://www.descript.com/blog/article/podcast-script">How to write a podcast script</a></li>
+<li><a href="https://www.reddit.com/r/podcasting/comments/qvxz3k/how_to_write_a_podcast_script_my_simple_outline/">Some nice ideas in this reddit post</a></li>
+</ul>
+<p>Your goal is to introduce your question in an engaging way, bring in the claims and counter claims to explore the issue, then close with a good point to end on. <em>You could also think about royalty free background, intro or outro music to incorporate.</em> There is no need for a message from your sponsor :)</p>
 <ol type="1">
-<li>This could catch any computation going on, not just your code, so we should aim for <strong>isolation</strong>, i.e.&nbsp;trying not to get data that’s confounded by other software and hardware running at the same time</li>
-<li>Ideally, recognise that the measurement framework may add additional <strong>overhead</strong> (hopefully in this case it should be relatively constant for all tests)</li>
-<li>Understanding how much is <strong>missed</strong> by what we are able to measure (for example, RAPL measures the CPU, but not the memory, I/O subsystems or anything else that makes up the total system energy)</li>
-<li><strong>Repeatable</strong> and <strong>representative</strong> test selection. We should run tests more than once and take an average (arithmetic mean) and standard deviation. We should report each run and the average. I’d suggest running each test 5 times.</li>
+<li><p>You should create <code>week8-notes.md</code> in your <code>week8</code> folder.</p></li>
+<li><p>Your goal today is to create a <strong>podcast script</strong>, so start with this main markdown heading. It’s not a verbatim text of what you plan to say, rather:</p>
+<ul>
+<li>section headings for the key structural elements</li>
+<li>a running order for what you plan to talk about, facts, quotes or media elements you plan to include</li>
+<li>link outs to sources for each of these elements, noting any copyright issues</li>
+</ul></li>
+<li><p>A ‘shooting list’ of any audio resources you need to record, interviews you need to conduct, or music items you need to identify</p></li>
+<li><p>Remember to: <code>add</code>, <code>commit</code> and <code>push</code> any new files you’ve created.</p></li>
 </ol>
-<p>Normally, test selection would involve picking representative use cases or data sets to ensure that data or interaction dependent behaviour is captured. In our case for this lab, we’re going to use a CPU stress testing framework to make the test development process simpler.</p>
-</section>
-<section id="task" class="level2">
-<h2 class="anchored" data-anchor-id="task">Task</h2>
-<p>Time available: 1 hour:</p>
-<p>Make sure you have an up to date copy of your coursework repo available (<code>git clone</code> or <code>git pull</code> as needed to ensure you are up to date with the server), as before. In the ‘<code>week4</code>’ folder create a new markdown document called <code>username-week4-labnotes.md</code>, named with your user as in past weeks.</p>
-<ol type="1">
-<li><p>Read about <code>stress-ng</code> <a href="https://github.com/ColinIanKing/stress-ng">a system stress testing framework</a></p></li>
-<li><p>Select 3 tests that exercise the CPU (as that’s what we’re going to measure). There are <em>a lot</em> of options. In selecting your tests you really want a mixture of:</p>
-<ol type="1">
-<li>duration (see <code>--timeout</code>)</li>
-<li>CPU intensity of workload (see <code>--workload-load</code>)</li>
-<li>not too much that isn’t CPU (as that’s what we’re primarily measuring) (see <code>--cpu</code>) There are several examples in the <a href="https://wiki.ubuntu.com/Kernel/Reference/stress-ng">stress-ng reference guide</a>.</li>
-</ol>
-<p>It’s easy to have a test that runs for too little, or too much time - so do a couple of test runs before taking your measurements.</p></li>
-<li><p>Download <a href="profiler.py">this python script</a> which we’ll use for energy reporting from <a href="https://greencompute.uk/Measurement/RAPL">Intel’s RAPL API</a>. This is a python script and <strong>needs to be executable</strong> - you may need to change it’s file permissions (e.g.&nbsp;<code>chmod u+x profiler.py</code> in the terminal shell)</p></li>
-<li><p>In your markdown report, add an introductory paragraph on what you plan to measure and your ‘method statement’ of how you’ve conducted your tests</p></li>
-<li><p>For each test case, add a subsection with the goal of the test, the command line you’ve used and a table with the results.</p></li>
-<li><p>The table should have the results of each test run, how much time it took and how many Joules of energy</p></li>
-<li><p>Finish the table with the average time taken and standard deviation. You could use a spreadsheet like excel, or a stats package like R (see <a href="https://education.rstudio.com/learn/beginner/">getting started reference</a>)</p></li>
-<li><p>For each test case add a summary converting from Joules to Watts (e.g.&nbsp;<a href="https://www.rapidtables.com/calc/electric/Joule_to_Watt_Calculator.html">using a converter</a>, or by hand):</p>
-<p>Recall, the power P in watts (W) is equal to the energy E in joules (J), divided by the time period t in seconds (s) - <em>take care with your units!!</em></p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mi>E</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
-P = \frac{E}{t}
-</annotation></semantics></math></p></li>
-<li><p>Add a subsection called <code>## Reflections</code> which summarises what you’ve found, and any personal observations on the number of Watt’s associated with the computations. How much variability was there between the tests; how does the energy compare with say a 12W LED, or watching TV for an hour?</p></li>
-</ol>
-<p>Don’t forget to <code>git add</code> your new file, <code>commit</code> and <code>push</code> to the server at least at the end of the task.</p>
-</section>
-<section id="running-the-stress-ng-framework" class="level2">
-<h2 class="anchored" data-anchor-id="running-the-stress-ng-framework">Running the stress-ng framework</h2>
-<p>You can <a href="https://github.com/ColinIanKing/stress-ng">download and build the stress-ng framework</a>, e.g.&nbsp;using <code>git clone</code>, then build it using <code>make</code>. However, <strong>the easiest way</strong> to run the framework is as follows (using <code>docker</code>):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> ghcr.io/colinianking/stress-ng <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This will download the code and run it for you with the parameters <code>--help</code> in this case.</p>
-<p>To run a test, pass in the configuration parameters to <code>stress-ng</code>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--rm</span> ghcr.io/colinianking/stress-ng <span class="at">--cpu</span> 1 <span class="at">--timeout</span> 1m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To run a test and measure it’s energy, try passing the docker command to the <code>profiler.py</code> python script:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./profiler.py</span> <span class="st">"docker run --rm ghcr.io/colinianking/stress-ng --cpu 1 --timeout 1m"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Note: there are double quotes around the parameter to the profiler script.</p>
-<section id="important-note" class="level3">
-<h3 class="anchored" data-anchor-id="important-note">Important note</h3>
-<p><code>docker</code> will download the code for you, but it will take time and resources to do so. You will <em>want to run this once</em> <strong>before</strong> you start doing your batches of 5 test energy measurement runs <strong>to avoid polluting your results datasets</strong>!</p>
-</section>
+<p>Note again: this is <em>your</em> framing of <em>your</em> podcast, and using one of the online templates verbatim or gen AI script writing tools <strong>is not acceptable</strong> and is <strong>academic malpractice</strong>.</p>
 </section>
 <section id="learning-outcomes" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h2>
 <ul>
-<li>You should have an appreciation of how energy varies with computation</li>
-<li>Should know how to take measurements in a systematic way</li>
-<li>Should know how each run varies at a system level, and the challenges of apportioning to specific running software</li>
-<li>A ‘ready reckoning’ of the bounds for energy saving due to reducing load on the CPU</li>
+<li>The podcast task is about critical understanding of evidence for and against a particular position w.r.t. ICT sustainability</li>
+<li>You will learn how to find and evaluate reliable data to argue your position</li>
+<li>What makes a reliable source</li>
+<li>How to quickly skim read and evaluate a written argument concerning ICT and sustainability</li>
 </ul>
-</section>
-<section id="fun" class="level2">
-<h2 class="anchored" data-anchor-id="fun">Fun</h2>
-<ul>
-<li>A nice console based graph of your energy use (<a href="https://github.com/stolk/energygraph">energygraph</a>). Note, you do not need to (and <strong>should not</strong>) use <code>sudo</code> on our machines - we’ve opened up the RAPL permissions on the lab machines. Just <code>./energygraph</code> if you’re in the folder where you’ve downloaded and built it.</li>
-</ul>
-<!-- * [Power measurement tools on MacOS](https://www.green-coding.io/blog/power-measurement-on-macos/) -->
 
 
 </section>
