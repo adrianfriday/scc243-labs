@@ -22,6 +22,6 @@ The labs are anticipated to be as follows:
 | 5 | Green AI measurement lab | [week5](week5) |
 | 6 | Topic & reading selection | [week6](week6) |
 | 7 | Annotated references | [week7](week7) |
-| 8 | Script development  | week8<!-- [week8](week8) --> |
+| 8 | Script development  | [week8](week8) |
 | 9 | Record/edit podcast | week9<!-- [week9](week9) --> |
 | 10 | Edit, write abstract, submit; closing reflective statement (w. ref to other courses/position on learning) | week10<!-- [week10](week10) --> |
