@@ -1,6 +1,6 @@
 # Week 9 worksheet
 
-As you know, weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should be moving to using the labs for editing your audio and getting help and opinions on whether the podcast you're putting together meets the required standard.
+As you know, weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary *digital* sustainability research questions.  You should be moving to using the labs for editing your audio and getting help and opinions on whether the podcast you're putting together meets the required standard.
 
 *Some of you are catching up as the deadline approaches, it's fine to use the labs to ask questions about past weeks' tasks.*
 
