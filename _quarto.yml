@@ -20,7 +20,7 @@ website:
       - week7/week7-task.md
       - week8/week8-task.md
       - week9/week9-task.md
-      # - week10/week10-task.md
+      - week10/week10-task.md
 
 format:
   html:

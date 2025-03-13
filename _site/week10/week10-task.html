@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>git_repo_setup – SCC243 Sustainable Computing Labs</title>
+<title>week10-task – SCC243 Sustainable Computing Labs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../week1/git_repo_setup.html" aria-current="page"> 
+    <a class="nav-link" href="../week1/git_repo_setup.html"> 
 <span class="menu-text">Part 1: Setting up your version controlled repo!</span></a>
   </li>  
   <li class="nav-item">
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Week 9 worksheet</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../week10/week10-task.html"> 
+    <a class="nav-link active" href="../week10/week10-task.html" aria-current="page"> 
 <span class="menu-text">Week 10 worksheet</span></a>
   </li>  
 </ul>
@@ -152,10 +152,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-1-setting-up-your-version-controlled-repo" id="toc-part-1-setting-up-your-version-controlled-repo" class="nav-link active" data-scroll-target="#part-1-setting-up-your-version-controlled-repo">Part 1: Setting up your version controlled repo!</a>
+  <li><a href="#week-10-worksheet" id="toc-week-10-worksheet" class="nav-link active" data-scroll-target="#week-10-worksheet">Week 10 worksheet</a>
   <ul class="collapse">
-  <li><a href="#a-word-on-security" id="toc-a-word-on-security" class="nav-link" data-scroll-target="#a-word-on-security">A word on security</a></li>
-  <li><a href="#more-version-control" id="toc-more-version-control" class="nav-link" data-scroll-target="#more-version-control">More version control</a></li>
+  <li><a href="#task-5-finalise-audio-write-reflective-statement-submit" id="toc-task-5-finalise-audio-write-reflective-statement-submit" class="nav-link" data-scroll-target="#task-5-finalise-audio-write-reflective-statement-submit">Task 5: finalise audio, write reflective statement, submit</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning outcomes</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -166,37 +166,54 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="part-1-setting-up-your-version-controlled-repo" class="level1">
-<h1>Part 1: Setting up your version controlled repo!</h1>
-<p>This is an <em>absolute essential</em>. Submission of all work, and evidence of your achievement, will be through a ‘portfolio submission’ via SCC’s gitlab instance <code>https://scc-source.lancs.ac.uk</code> (<em>this will be private to you, so you must invite ‘<code>@friday</code>’ as a collaborator - please choose anything higher permission than ‘Guest’, e.g.&nbsp;‘Developer’ <strong>otherwise I can’t see your files!</strong> </em>).</p>
-<p>To set this up, go to <code>https://scc-source.lancs.ac.uk</code> and <em>login to create an account if you don’t already have one</em>.</p>
-<ul>
-<li>Read about <a href="https://about.gitlab.com/topics/version-control/">the basics of version control</a></li>
-<li>You may find <a href="https://www.zdnet.com/article/how-to-get-started-with-git-on-linux/">this step by step tutorial also useful</a>, if you haven’t used git from the Linux terminal before</li>
-</ul>
-<p>Essentially, the idea is that you ‘check out’ (normally) the latest version of a project from the server to your local machine. Work on the content (mainly <strong>markdown</strong> text files ending in ‘<code>.md</code>’ in this case). <strong>Add the new files</strong> and <strong>Commit</strong> your changes (with a helpful message explaining what you’ve done is a key thing). Then <strong>push</strong> a copy of your repo to the server with ‘<code>git push</code>’.</p>
-<p>The great thing is, there’s a backed up version of not just your work, but each important step leading up to where you are now. <em>This will be important for the overall assessment of your work.</em></p>
-<p>It’ll take a while to ‘get comfy’ with how this works in practice. Although I think this is important general learning (to use git from the terminal). You might find it easier to use <a href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-git">the built in git client in vscode</a>.</p>
-<p>Repos can generally be public or private. You can invite collaborators to either. <strong>We’d ask that all your coursework remains private to avoid unwanted code sharing.</strong></p>
-<p><strong>Create a repo</strong> and <strong>clone it</strong> to your file system. <a href="https://scc-source.lancs.ac.uk/friday/scc243-labs/-/archive/main/scc243-labs-main.zip">Download my template</a> (ZIP), expand it, and copy the files and weekly subfolders into your folder you’ve ‘cloned’ from the server. <em>You should have a structure where there is a folder for each week’s lab that’s committed and pushed to your scc-source account by the end of this lab.</em></p>
-<blockquote class="blockquote">
-<p>i.e.&nbsp;Your repo in this case <strong>should be private</strong>.</p>
-</blockquote>
-<section id="a-word-on-security" class="level2">
-<h2 class="anchored" data-anchor-id="a-word-on-security">A word on security</h2>
-<ul>
-<li>You must use either HTTPS or SSH based URLs for securely pushing/pulling your code. HTTPS is easier, since SSH would require that you <a href="https://docs.gitlab.com/ee/user/ssh.html">generate a public/private key pair</a> then upload your public key to gitlab as part of your profile.</li>
-<li>It’s easier to <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">generate a ‘personal access token’</a>. You will need your token to have both <code>read_repository</code> and <code>write_repository</code> access rights.</li>
-</ul>
-<p>You use a personal access token instead of a password. <em>You’ll want to keep this somewhere safe for future use, as once created you can’t see it again. <strong>Don’t share it with anyone!</strong></em></p>
-<p>The good news is VS Code will remember your credentials for you. The git password cache will enable the password to be remembered from the terminal so you don’t have to enter your password or token every time you push/pull from the remote repo (<code>git config --global credential.helper cache</code>) from the shell.</p>
-</section>
-<section id="more-version-control" class="level2">
-<h2 class="anchored" data-anchor-id="more-version-control">More version control</h2>
+<section id="week-10-worksheet" class="level1">
+<h1>Week 10 worksheet</h1>
+<p>As you know, weeks 6-10 are to be used to produce <strong>a 10 minute audio podcast</strong> exploring interesting and contemporary <em>digital</em> sustainability research questions. You should use this lab to finalise everything, make any final edits and get help and opinions on whether the podcast you’re putting together meets the required standard.</p>
 <ol type="1">
-<li><a href="https://docs.gitlab.com/ee/user/ssh.html">generate a public/private key pair</a> then upload your public key to gitlab as part of your profile</li>
-<li>Ensure you understand how to use the <code>SSH</code> URIs (that start with <code>git@</code> instead of <code>HTTPS</code>) with your key pair for cloning and pushing your repos from/to your gitlab repo.</li>
+<li><strong>You should make sure all your folders and markdown files for each week’s task are finalised and checked in to your repo.</strong></li>
+<li>A complete copy of your repo is submitted as a single ZIP file <a href="https://modules.lancaster.ac.uk/mod/assign/view.php?id=2609120">via the moodle submission point</a>.</li>
+<li>A copy of your final audio podcast <a href="https://modules.lancaster.ac.uk/mod/assign/view.php?id=2609114">should be submitted via moodle also</a></li>
 </ol>
+<p><em>Some of you are catching up as the deadline approaches, it’s fine to use the labs to ask questions about past weeks’ tasks.</em></p>
+<section id="task-5-finalise-audio-write-reflective-statement-submit" class="level2">
+<h2 class="anchored" data-anchor-id="task-5-finalise-audio-write-reflective-statement-submit">Task 5: finalise audio, write reflective statement, submit</h2>
+<p>You should be basically done with your podcast. Make any final edits to the audio asset and check you’re happy with it.</p>
+<ol type="1">
+<li><p>You should create <code>podcast-notes.md</code> in your <code>week10</code> folder.</p></li>
+<li><p>Add any important details that might prevent or guide us in assessing or publishing your podcast. For example:</p></li>
+</ol>
+<ul class="task-list">
+<li><label><input type="checkbox">The podcast creates copyright materials and can’t be published as is</label></li>
+<li><label><input type="checkbox">The interviewees have/have not given consent for the recording to be published</label></li>
+<li><label><input type="checkbox">I give permission that the podcast can be published as an example for other students on the course</label></li>
+<li><label><input type="checkbox">I give permission that the podcast can be entered into the informal competition (judged by the course convenors)</label></li>
+<li><label><input type="checkbox">I give permission that the podcast can be entered into the faculty competition</label></li>
+<li><label><input type="checkbox">I give permission that the podcast can be published online and be public</label></li>
+</ul>
+<ol start="3" type="1">
+<li><p>I recommend storing the audio clips in your H drive or onedrive, and <em>you avoid having large binary files in your git repository!</em></p></li>
+<li><p>Remember to: <code>add</code>, <code>commit</code> and <code>push</code> any new (non-audio) files you’ve created.</p></li>
+<li><p>Add a <code>week10-reflections.md</code> file to the <code>week10</code> folder. I’d recommend reading your reflective statement from week 1, then please write brief statements on the following so we can learn from you:</p></li>
+</ol>
+<ul>
+<li>what I have learnt on the course</li>
+<li>whether your attitudes to ICT and sustainability have changed in any way</li>
+<li>anything you’d recommend we definitely keep for next year</li>
+<li>anything you’d recommend we do differently in future years</li>
+</ul>
+<ol start="7" type="1">
+<li><p>Sanity check that everything is complete across all lab weeks and verify that the markdown files are added to your repo on <code>scc-source</code>. Take care to check each week against the task checklists to ensure each week <em>is complete</em>.</p></li>
+<li><p>Submit the podcast and the git repo using the submission points provided <strong>on moodle</strong>.</p></li>
+</ol>
+</section>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h2>
+<ul>
+<li>The podcast task is about critical understanding of evidence for and against a particular position w.r.t. ICT sustainability</li>
+<li>How to edit and present a narrative argument around a sustainability topic</li>
+<li>How to utilise evidence to support this narrative</li>
+<li>Creative audio editing and how to create a compelling podcast</li>
+</ul>
 
 
 </section>
