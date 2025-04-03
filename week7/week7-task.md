@@ -14,7 +14,7 @@ Today's goal is to find evidence that lets you explore positions, identify quote
 
 2. Your goal today is to create an **annotated bibliography**, so start with this main markdown heading.  The annotated bibliography is a full reference citation for each source, or URL as appropriate.
 
-   For example, a full citation to Fretag et al. looks like:
+   For example, a full citation to Freitag et al. looks like:
    
    Freitag, C., Berners-Lee, M., Widdicks, K., Knowles, B., Blair, G. S., and Friday, A. The
    real climate and transformative impact of ICT: A critique of estimates, trends, and regulations. Patterns. 2, 9 (2021), 100340. [doi: 10.1016/j.patter.2021.100340](https://doi.org/10.1016/j.patter.2021.100340)
