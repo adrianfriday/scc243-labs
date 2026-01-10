@@ -9,6 +9,7 @@ node_modules
 
 # Book build output
 _book
+_site
 
 # eBook build output
 *.epub
@@ -19,3 +20,5 @@ _book
 .DS_Store
 
 /.quarto/
+
+**/*.quarto_ipynb
