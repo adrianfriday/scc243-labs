@@ -30,4 +30,4 @@ The good news is VS Code will remember your credentials for you.  The git passwo
 
 ## More version control
 1. [generate a public/private key pair](https://docs.gitlab.com/ee/user/ssh.html) then upload your public key to gitlab as part of your profile
-2. Ensure you understand how to use the `SSH` URIs (that start with `git@` instead of `HTTPS`) with your key pair for cloning and pushing your repos from/to your gitlab repo.
+2. Ensure you understand how to use the `SSH` URIs (that start with `git@` instead of `https`) with your key pair for cloning and pushing your repos from/to your gitlab repo.
