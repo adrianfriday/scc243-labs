@@ -19,7 +19,7 @@ The labs are anticipated to be as follows:
 | Week | Lab | See details (link) |
 | ---  | --- | --- |
 | 1 | Setup research task, github; opening reflective statement | [week1](week1/week1-task.html) |
-| 2 | My digital footprint survey/ photos | week2 <!-- [week2](week2/week2-task.html) --> |
+| 2 | My digital footprint survey/ photos | [week2](week2/week2-task.html) |
 | 3 | Workload footprint estimation | week3 <!-- [week3](week3/week3-task.html) --> |
 | 4 | Measurement lab | week4<!-- [week4](week4/week4-task.html) --> |
 | 5 | Green AI measurement lab | week5<!-- [week5](week5/week5-task.html) --> |
