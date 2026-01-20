@@ -12,7 +12,7 @@ website:
         text: Home
       - week1/git_repo_setup.md
       - week1/week1-task.md
-      # - week2/week2-task.md
+      - week2/week2-task.md
       # - week3/week3-task.md
       # - week4/week4-task.md
       # - week5/week5-task.md
