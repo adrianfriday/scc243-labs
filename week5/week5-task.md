@@ -80,7 +80,7 @@ python test-cpu.py
 ./profiler.py "python test-cpu.py"
 ```
     
-	**Important note: as last week, the `profiler.py` swallows the output from the task, so I'd recommend running the task to verify it's running ok first, before running under the energy profiler.  Especially, if the task completion time and energy used is suspiciously small - it's probably not working and printing some error message!**
+**Important note: as last week, the `profiler.py` swallows the output from the task, so I'd recommend running the task to verify it's running ok first, before running under the energy profiler.  Especially, if the task completion time and energy used is suspiciously small - it's probably not working and printing some error message!**
 
 7. Document your experiment *in markdown format*, using markdown tables as last week.  Add an *introductory paragraph* on what you plan to measure and your 'method statement' of how you've conducted your tests.  *Take care to explain how you are calculating the energy saved.*
 8. For each test case, add a subsection with the goal of the test, *the command line* you've used and a table with the results.
