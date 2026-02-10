@@ -11,14 +11,15 @@ warnings.filterwarnings("ignore")
 
 # Load data file (will get cached after first download)
 
-dataset_dir = "data"
+dataset_dir = "/tmp/data"
 dataset_name = "year_prediction_msd"
-url = "https://archive.ics.uci.edu/ml/machine-learning-databases/00203/YearPredictionMSD.txt.zip"
+url = "https://scc-assets.lancs.ac.uk/teaching/2025_2026/YearPredictionMSD.txt"
 
 os.makedirs(dataset_dir, exist_ok=True)
 local_url = os.path.join(dataset_dir, os.path.basename(url))
 
 if not os.path.isfile(local_url):
+    print(f"Downloading {url}")
     response = requests.get(url, stream=True)
     with open(local_url, "wb+") as file:
         for data in response.iter_content(8192):
