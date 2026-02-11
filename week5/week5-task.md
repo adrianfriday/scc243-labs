@@ -61,7 +61,7 @@ source profiling/bin/activate
 2. Install the packages we'll need for this task.
 
 ```bash
-python3 -m pip install scikit-learn pandas requests scikit-learn-intelex python3-distutils packaging
+python3 -m pip install scikit-learn pandas requests scikit-learn-intelex python3-distutils packaging psutil
 ```
 	
 3. Download the [profiler.py](../week4/profiler.py) script we used last week (or copy it from last week's folder - *it hasn't changed*.)
