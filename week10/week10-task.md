@@ -1,6 +1,6 @@
 # Week 10 worksheet
 
-As you know, weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary *digital* sustainability research questions.  You should use this lab to finalise everything, make any final edits and get help and opinions on whether the podcast you're putting together meets the required standard.
+As you know, weeks 6-10 are to be used to produce **a maximum 5 minute audio podcast** exploring interesting and contemporary *digital* sustainability research questions.  You should use this lab to finalise everything, make any final edits and get help and opinions on whether the podcast you're putting together meets the required standard.
 
 1. **You should make sure all your folders and markdown files for each week's task are finalised and checked in to your repo.**
 2. A complete copy of your repo is submitted as a single ZIP file [via the moodle submission point](https://modules.lancaster.ac.uk/mod/assign/view.php?id=2609120).

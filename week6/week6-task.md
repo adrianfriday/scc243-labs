@@ -6,9 +6,9 @@
 **Amber**: See [AI and academic practice framework](https://portal.lancaster.ac.uk/ask/study/developing-academic-skills/using-ai-in-your-learning-and-assessment/). *AI can be used to help you search for evidence sources and explore opinions on topics.  AI **should not** be used to generate the script or podcast audio.  You should state clearly in a section in your reflective report for the podcast in week 10, how AI has been used.*  Take **great care**, as AI can easily hallucinate evidence and references *that don't in fact exist!*.  I highly recommend [this short online module](https://thebullshitmachines.com) on what LLMs can and can't do, it's really interesting, informative and thought provoking!
 :::
 
-Weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss your core research question, approach, critical selection of evidence and materials.  Plus to learn and practice using the audio editing and recording software (`Audacity`).
+Weeks 6-10 are to be used to produce **a maximum 5 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss your core research question, approach, critical selection of evidence and materials.  Plus to learn and practice using the audio editing and recording software (`Audacity`).
 
-*Each week* has **a short written deliverable**, and a submission **is not complete** without all the minor deliverables.
+*Each week* has **a short written deliverable**, and a submission **is not complete** without **all** the minor deliverables.
 
 The final submission by week 10 is the audio podcast file via **a moodle submission point** *and* and description summarising what the podcast does, a list of recorded materials/ sources if any are included, any copyright implications that would prevent its wide publication/ reuse, and a `#Reflection` section on what you've learnt via the repo (`week10` folder).
 
@@ -19,14 +19,15 @@ The topic of your podcast should explore a contemporary topic or question in ICT
 Example ideas (but not limited to) might be:
 
 1. Should we be worried by AI's energy demand?
-2. What is driving growth in ICT and can it be stopped?
-3. What is the role of ICT in helping us integrate renewables?
-4. Should we trust climate change advice from a chatbot?
-5. Does a footballer's tweet use the same energy as a rocket?
-6. What is stopping my phone or PC lasting 10 years?
-7. Can ICT be sustainable?
+2. Is there enough water for UK's AI data centre needs?
+3. What is driving growth in ICT and can it be slowed or stopped?
+4. What is the role of ICT in helping us integrate renewables?
+5. Should we trust climate change advice from a chatbot?
+6. Does a footballer's tweet use the same energy as a rocket?
+7. What is stopping my phone or PC lasting 10 years?
+8. Can ICT ever be sustainable?
 
-*I very much expect you to come up with your own ideas*.  But a key aspect is that you can find *enough sources* of **high quality** material and evidence to support an argument in a podcast.
+*I very much expect you to want to come up with your own ideas*.  But a key aspect of this task is that you can find *enough sources* of **high quality** material and evidence to support an argument in a podcast that is ideally also well produced and compelling to listen to.
 
 1. You should create `week6-notes.md` in your `week6` folder.  Add a heading `# Research question`.  Provide your research question *and* a brief justification paragraph of why you think it will make an interesting podcast.
 2. Add a heading `# Supporting material`.  List links to sources you've identified which provide evidence for and against the central argument of your research question.  Your goal is to provide a well reasoned and logical argument based on objective and rational analysis.  Unsupported opinion, unevidenced rants, sales/ greenwash will not gain good marks!
@@ -43,7 +44,7 @@ Recall that there are many different forms of evidence, and some sources can be 
 
 ## Recording advice and interviews
 
-There are webcams with microphones on several of the lab machines in B74 and B80 SAT that you can use for recording.  The free/open source `Audacity` software is available for recording, editing and processing your audio files.  The final output should be good quality mp3 (e.g. around 192Kbps or similar variable bitrate mp3).
+There are webcams with microphones on several of the lab machines in B70 SAT that you can use for recording.  The free/open source `Audacity` software is available for recording, editing and processing your audio files.  The final output should be good quality mp3 (e.g. around 192Kbps or similar variable bitrate mp3).
 
 You will likely find the lab environment too noisy for recording the final take of the audio.  Most phones have reasonable quality voice recording software, or you can capture audio from your computer if you have a microphone.
 
