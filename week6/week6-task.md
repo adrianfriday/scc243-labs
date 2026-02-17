@@ -16,18 +16,20 @@ The final submission by week 10 is the audio podcast file via **a moodle submiss
 
 The topic of your podcast should explore a contemporary topic or question in ICT and sustainability.  This can be your evaluation of the evidence available, but should be *backed up by evidence* you have identified and evaluated.
 
-Example ideas (but not limited to) might be:
+10 example ideas to get you started (but certainly not limited to these!):
 
 1. Should we be worried by AI's energy demand?
 2. Is there enough water for UK's AI data centre needs?
-3. What is driving growth in ICT and can it be slowed or stopped?
-4. What is the role of ICT in helping us integrate renewables?
-5. Should we trust climate change advice from a chatbot?
-6. Does a footballer's tweet use the same energy as a rocket?
-7. What is stopping my phone or PC lasting 10 years?
-8. Can ICT ever be sustainable?
+3. Is ICT helping or hindering us from integrating renewables?
+4. Should we trust climate change advice from a chatbot?
+5. Does a footballer's tweet use the same energy as a rocket?
+6. What is stopping my phone or PC lasting 10 years?
+7. When is a technology a positive enough impact and great enough need to justify negative environmental impact?
+8. Should children be using AI at all if it harms the environment?
+9. Should we help children understand the environmental impact of AI?
+10. Is the education system locked into unsustainable AI tech?
 
-*I very much expect you to want to come up with your own ideas*.  But a key aspect of this task is that you can find *enough sources* of **high quality** material and evidence to support an argument in a podcast that is ideally also well produced and compelling to listen to.
+*I very much expect you to want to come up with your own ideas*.  Irrespective, *a key aspect* of this task is that you can find *enough sources* of **high quality** material and evidence to support an argument in a podcast that is ideally also well produced and good to listen to.
 
 1. You should create `week6-notes.md` in your `week6` folder.  Add a heading `# Research question`.  Provide your research question *and* a brief justification paragraph of why you think it will make an interesting podcast.
 2. Add a heading `# Supporting material`.  List links to sources you've identified which provide evidence for and against the central argument of your research question.  Your goal is to provide a well reasoned and logical argument based on objective and rational analysis.  Unsupported opinion, unevidenced rants, sales/ greenwash will not gain good marks!
@@ -60,8 +62,9 @@ Consider early in the process whether you want *to record any interviews with an
 
 If so, you will want to **gain ethical approval that your methods are acceptable** and leave time to schedule and record an interview, transcribe and summarise the results.  *Conversational podcasts with more than one speaker are normally more engaging.*
 
-* [Participant information sheet](https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/research/research-services/ethics/FSTSampleParticipantInformationSheet(02May24).docx) (to customise)
-* [Ethics application form](https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/research/research-services/ethics/FSTSampleConsentForm.docx) (to send to [me by email](mailto:a.friday@lancaster.ac.uk)) for approval
+* [Participant information sheet](Participant%20Information%20Sheet%20and%20Consent%20Form-20260217/SCC%20ParticipantInformationSheet%202024.docx)
+* [Sample participant consent form](Participant%20Information%20Sheet%20and%20Consent%20Form-20260217/SCC Sample Consent Form 2024.docx)
+* [Ethics application (online)](https://forms.office.com/pages/responsepage.aspx?id=Ec2bnHqXnE6poLxzQJAWSrImC9esQ1BEv4yMCLJf7u1UOTVMVkFDV0tFRUo5SFhFUzZFRTRLVVZDSCQlQCN0PWcu&stdId=&route=shorturl) (quoting [my email](mailto:a.friday@lancaster.ac.uk) for approval)
 
 Essentially, you just want to make it clear you're going to record them for a podcast and include the audio in the podcast.  Be clear that they can withdraw and have their audio removed if it is possible to do so.  Be also clear whether they're happy for the audio to be identifiable and for them to be identified (they might want to remain anonymous or have their words voiced by someone else or masked in some way).  If there are limits, like they are happy for use as a coursework, but not in the public domain, then the participant information form is the place to do this.
 

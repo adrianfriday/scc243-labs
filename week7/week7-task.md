@@ -1,6 +1,6 @@
 # Week 7 worksheet
 
-Weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss your core research question, approach, critical selection of evidence and materials.  Plus to learn and practice using the audio editing and recording software (`Audacity`).
+Weeks 6-10 are to be used to produce **a maximum 5 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss your core research question, approach, critical selection of evidence and materials.  Plus to learn and practice using the audio editing and recording software (`Audacity`).
 
 *Each week* has **a short written deliverable**, and a submission **is not complete** without all the minor deliverables.
 

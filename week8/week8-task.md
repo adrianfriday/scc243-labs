@@ -1,6 +1,6 @@
 # Week 8 worksheet
 
-Weeks 6-10 are to be used to produce **a 10 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss any further reflections on your choice of core research question, and critically explore the evidence for and against that you've identified.
+Weeks 6-10 are to be used to produce **a maximum 5 minute audio podcast** exploring interesting and contemporary digital sustainability research questions.  You should use the labs to discuss any further reflections on your choice of core research question, and critically explore the evidence for and against that you've identified.
 
 *Especially important is to clear up any concerns you may have as to whether the evidence is sufficiently good, and whether your annotated bibliography from last week, is ok.*
 
