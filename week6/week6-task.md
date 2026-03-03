@@ -60,7 +60,7 @@ If you are *not* comfortable recording your own voice, consider asking someone e
 Consider early in the process whether you want *to record any interviews with anyone*, e.g. experts on a particular topic.
 :::
 
-If so, you will want to **gain ethical approval that your methods are acceptable** and leave time to schedule and record an interview, transcribe and summarise the results.  *Conversational podcasts with more than one speaker are normally more engaging.*
+If so, you will want to **gain ethical approval that your methods are acceptable** and leave time to schedule and record an interview, transcribe and summarise the results.  A release form will need to be signed by the interviewee to say they're happy for you to use the recording of them in your podcast.  *Conversational podcasts with more than one speaker are normally more engaging.*
 
 * [Participant information sheet](Participant%20Information%20Sheet%20and%20Consent%20Form-20260217/SCC%20ParticipantInformationSheet%202024.docx)
 * [Sample participant consent form](Participant%20Information%20Sheet%20and%20Consent%20Form-20260217/SCC Sample Consent Form 2024.docx)
